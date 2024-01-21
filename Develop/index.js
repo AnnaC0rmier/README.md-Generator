@@ -23,6 +23,7 @@ ${data.contributions}
 ${data.testing}
 
 ## Contact
+ ${data.reachout}
 - GitHub: [${data.username}](https://github.com/${data.username})
 - Email: ${data.email}
 `;
@@ -64,6 +65,12 @@ inquirer
         type: 'input',
         message: 'What is your GitHub Username?',
         name: 'username'
+    },
+    {
+      type: 'input',
+      message: 'Enter instructions about how to reach you for further questions',
+      name: 'reachout'
+
     },
     {
         type: 'input',
