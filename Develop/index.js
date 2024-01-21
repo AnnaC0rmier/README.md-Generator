@@ -1,5 +1,32 @@
 const inquirer = require('inquirer');
-const fs = require ('fs')
+const fs = require ('fs');
+const { error } = require('console');
+
+
+const convertToMarkdown = (data) => {
+  return `
+# ${data.title}
+
+## Description
+${data.description}
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## Contributions
+${data.contributions}
+
+## Testing
+${data.testing}
+
+## Contact
+- GitHub: [${data.username}](https://github.com/${data.username})
+- Email: ${data.email}
+`;
+};
 
 inquirer
   .prompt([
@@ -47,13 +74,17 @@ inquirer
         type: 'input',
         message: 'What is your email address?',
         name: 'email'
-    }
+    },
   ])
-  .then((response) => 
-    fs.writeFile('readme.md', JSON.stringify(response), (format) =>
-        format
-  ))
+  .then((data) => {
+
+    const markDown = convertToMarkdown(data)
+
+    fs.writeFile('readme.md', (data, markDown), (err) =>
+        err ? console.log(error) : console.log('Success!')
+  )})
   
+
 
 
 
