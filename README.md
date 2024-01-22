@@ -33,3 +33,7 @@ N/A
  Feel free to reach out via email for any further questions
 - GitHub: [AnnaC0rmier](https://github.com/AnnaC0rmier)
 - Email: anna.cormier.96@gmail.com
+
+
+https://github.com/AnnaC0rmier/readme-gen/assets/149715329/3a80acdc-ac22-4a15-b1b4-2ca70c48ca81
+
