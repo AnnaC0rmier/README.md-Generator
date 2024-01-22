@@ -8,8 +8,7 @@ const convertToMarkdown = (data) => {
   return `
 # ${data.title}
 
-##License
-${data.license}
+## License
 - ${renderLicense(data)}
 
 ## Table of Contents:
