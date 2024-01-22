@@ -1,11 +1,25 @@
 const inquirer = require('inquirer');
 const fs = require ('fs');
-const { error } = require('console');
+const renderLicense = require('./lisence');
+
 
 
 const convertToMarkdown = (data) => {
   return `
 # ${data.title}
+
+##License
+${data.license}
+- ${renderLicense(data)}
+
+## Table of Contents:
+-[Description](#description)
+-[Installation](#installation)
+-[Usage](#usage)
+-[Contributions](#contributions)
+-[Testing](#testing)
+-[Contact](#contact)
+
 
 ## Description
 ${data.description}
@@ -22,12 +36,14 @@ ${data.contributions}
 ## Testing
 ${data.testing}
 
-## Contact
+## Questions
  ${data.reachout}
 - GitHub: [${data.username}](https://github.com/${data.username})
 - Email: ${data.email}
 `;
 };
+
+
 
 inquirer
   .prompt([
@@ -35,6 +51,12 @@ inquirer
       type: 'input',
       message: 'What is the title of your project?',
       name: 'title',
+    },
+    {
+      type: 'list',
+      choices: ['MIT', 'Apache 2.0', 'Mozilla Public License 2.0',],
+      message: 'Choose a License type',
+      name: 'license'
     },
     {
       type: 'input',
@@ -87,8 +109,8 @@ inquirer
 
     const markDown = convertToMarkdown(data)
 
-    fs.writeFile('readme.md', (data, markDown), (err) =>
-        err ? console.log(error) : console.log('Success!')
+    fs.writeFile('README.md', (data, markDown), (err) =>
+        err ? console.log('error') : console.log('Success!')
   )})
   
 
