@@ -3,14 +3,20 @@
 
 ## License
 - [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- Click on the badge for Copyright Information
 
 ## Table of Contents:
 -[Description](#description)
+
 -[Installation](#installation)
+
 -[Usage](#usage)
+
 -[Contributions](#contributions)
+
 -[Testing](#testing)
--[Contact](#contact)
+
+-[Questions](#questions)
 
 
 ## Description

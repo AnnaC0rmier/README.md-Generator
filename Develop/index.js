@@ -18,7 +18,7 @@ const convertToMarkdown = (data) => {
 -[Usage](#usage)
 -[Contributions](#contributions)
 -[Testing](#testing)
--[Contact](#contact)
+-[Questions](#questions)
 
 
 ## Description
