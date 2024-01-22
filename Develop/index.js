@@ -10,6 +10,7 @@ const convertToMarkdown = (data) => {
 
 ## License
 - ${renderLicense(data)}
+- Click on the badge to view Copy Right Information
 
 ## Table of Contents:
 -[Description](#description)
@@ -92,11 +93,6 @@ inquirer
       message: 'Enter instructions about how to reach you for further questions',
       name: 'reachout'
 
-    },
-    {
-        type: 'input',
-        message: 'What is the link to your GitHub?',
-        name: 'GitHub'
     },
     {
         type: 'input',
