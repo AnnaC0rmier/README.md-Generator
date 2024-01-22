@@ -13,12 +13,12 @@ const convertToMarkdown = (data) => {
 - Click on the badge to view Copyright Information
 
 ## Table of Contents:
--[Description](#description)
--[Installation](#installation)
--[Usage](#usage)
--[Contributions](#contributions)
--[Testing](#testing)
--[Questions](#questions)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributions](#contributions)
+- [Testing](#testing)
+- [Questions](#questions)
 
 
 ## Description
