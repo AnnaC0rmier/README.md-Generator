@@ -6,17 +6,17 @@
 - Click on the badge for Copyright Information
 
 ## Table of Contents:
--[Description](#description)
+- [Description](#description)
 
--[Installation](#installation)
+- [Installation](#installation)
 
--[Usage](#usage)
+- [Usage](#usage)
 
--[Contributions](#contributions)
+- [Contributions](#contributions)
 
--[Testing](#testing)
+- [Testing](#testing)
 
--[Questions](#questions)
+- [Questions](#questions)
 
 
 ## Description
