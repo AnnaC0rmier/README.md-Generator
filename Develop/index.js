@@ -10,7 +10,7 @@ const convertToMarkdown = (data) => {
 
 ## License
 - ${renderLicense(data)}
-- Click on the badge to view Copy Right Information
+- Click on the badge to view Copyright Information
 
 ## Table of Contents:
 -[Description](#description)
